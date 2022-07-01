@@ -1,0 +1,19 @@
+{
+  "name": "default",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "shoaib-ryzen",
+  "password": "hotmail1VU",
+  "database": "dhp_p",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["'src/**/**.entities{.ts,.js}'"],
+  "subscribers": ["src/migrations/**/*{.ts,.js}"],
+  "migrations": ["src/subscriber/**/*{.ts,.js}"],
+  "cli": {
+    "entitiesDir": "src/entities",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
